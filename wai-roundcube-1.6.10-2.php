@@ -8,8 +8,9 @@
  * LiveConfig Web Application Installer (LC WAI)
  * Web-App-Name: Roundcube
  * Web-App-Version: 1.6.10
+ * $Id: wai-roundcube-1.6.10-2.php 774 2025-03-12 19:45:44Z kk $
  * @author Christoph Russow, Klaus Keppler
- * @copyright Copyright (c) 2009-2025 LiveConfig GmbH.
+ * @copyright Copyright (c) 2009-2024 LiveConfig GmbH.
  * @version 1.0
  * --------------------------------------------------------------------------
  */
@@ -27,14 +28,14 @@ $installer = new Installer();
 
 $LCWAI_APPINFOS = array(
   'name' => "Roundcube",
-  'icon' => "ico-roundcube.svg",
+  'icon' => "ico-roundcube.png",
   'version' => "1.6.10",
   'version_major' => 1,
   'version_minor' => 6,
   'version_patch' => 10,
   'version_extra' => 0,
-  'inst_name' => "wai-roundcube-1.6.10-1.php",
-  'inst_version' => 2,
+  'inst_name' => "wai-roundcube-1.6.10-2.php",
+  'inst_version' => 3,
   'release_date' => "2025-02-08 00:00:00",
   'rq_mysql_min' => "5.0",
   'rq_mysql_max' => null,
@@ -229,12 +230,12 @@ function wai_install() {
   }
 
   //move files out of "root"-directory
-  if($installer->move($vars['LC_DST']."/roundcubemail-1.6.8/*", $vars['LC_DST']."/") === false) {
+  if($installer->move($vars['LC_DST']."/roundcubemail-1.6.10/*", $vars['LC_DST']."/") === false) {
     return;
   }
 
   //remove the "root"-directory
-  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.8") === false) {
+  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.10") === false) {
     return;
   }
 
@@ -341,12 +342,12 @@ function wai_update() {
     return;
   }
 
-  if($installer->copy($vars['LC_DST']."/roundcubemail-1.6.8/*", $vars['LC_DST']."/") === false) {
+  if($installer->copy($vars['LC_DST']."/roundcubemail-1.6.10/*", $vars['LC_DST']."/") === false) {
     return;
   }
 
   //remove the "root"-directory
-  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.8") === false) {
+  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.10") === false) {
     return;
   }
 
