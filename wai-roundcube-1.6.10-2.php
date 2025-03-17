@@ -28,7 +28,7 @@ $installer = new Installer();
 
 $LCWAI_APPINFOS = array(
   'name' => "Roundcube",
-  'icon' => "ico-roundcube.png",
+  'icon' => "ico-roundcube.svg",
   'version' => "1.6.10",
   'version_major' => 1,
   'version_minor' => 6,
