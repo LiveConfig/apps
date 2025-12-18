@@ -7,9 +7,10 @@
  *                                    |___/
  * LiveConfig Web Application Installer (LC WAI)
  * Web-App-Name: phpMyAdmin
- * Web-App-Version: 5.2.2
+ * Web-App-Version: 5.2.3
+ * $Id: wai-phpmyadmin-5.2.3-1.php 782 2025-12-18 15:26:04Z kk $
  * @author Christoph Russow, Klaus Keppler
- * @copyright Copyright (c) 2009-2025 LiveConfig GmbH
+ * @copyright Copyright (c) 2009-2023 LiveConfig GmbH
  * @version 1.0
  * --------------------------------------------------------------------------
  */
@@ -28,15 +29,15 @@ $installer = new Installer();
 
 $LCWAI_APPINFOS = array(
   'name' => "phpMyAdmin",
-  'icon' => "ico-phpmyadmin.svg",
-  'version' => "5.2.2",
+  'icon' => "ico-phpmyadmin.png",
+  'version' => "5.2.3",
   'version_major' => 5,
   'version_minor' => 2,
-  'version_patch' => 2,
+  'version_patch' => 3,
   'version_extra' => 0,
-  'inst_name' => "wai-phpmyadmin-5.2.2-1.php",
+  'inst_name' => "wai-phpmyadmin-5.2.3-1.php",
   'inst_version' => 2,
-  'release_date' => "2025-01-21 00:00:00",
+  'release_date' => "2025-10-08 00:00:00",
   'rq_mysql_min' => "5.5",
   'rq_mysql_max' => null,
   'rq_php_min' => "7.2.0",
@@ -61,9 +62,9 @@ $LCWAI_APPINFOS = array(
 
 /* Files to download */
 $LCWAI_DOWNLOADS['ALL'] = array( // Downloads for ALL languages
-  'PACKAGE' => array('NAME' => 'phpMyAdmin-5.2.2-all-languages.tar.gz',
-                     'SHA1' => 'b5b75e45c9012025dc376c42e51da0dd242e5b74',
-                     'URL'  => 'https://files.phpmyadmin.net/phpMyAdmin/5.2.2/phpMyAdmin-5.2.2-all-languages.tar.gz'),
+  'PACKAGE' => array('NAME' => 'phpMyAdmin-5.2.3-all-languages.tar.gz',
+                     'SHA1' => '3242f3482e56c12c8960b4817e7f2959e8ac7dd0',
+                     'URL'  => 'https://files.phpmyadmin.net/phpMyAdmin/5.2.3/phpMyAdmin-5.2.3-all-languages.tar.gz'),
 );
 
 /* Variables Liveconfig has to ask the user */
@@ -132,12 +133,12 @@ function wai_install() {
   }
 
   //move files out of "root"-directory
-  if($installer->move($vars['LC_DST']."/phpMyAdmin-5.2.2-all-languages/*", $vars['LC_DST']."/") === false) {
+  if($installer->move($vars['LC_DST']."/phpMyAdmin-5.2.3-all-languages/*", $vars['LC_DST']."/") === false) {
     return;
   }
 
   //remove the "root"-directory
-  if($installer->remove($vars['LC_DST']."/phpMyAdmin-5.2.2-all-languages") === false) {
+  if($installer->remove($vars['LC_DST']."/phpMyAdmin-5.2.3-all-languages") === false) {
     return;
   }
 
@@ -257,12 +258,12 @@ function wai_update() {
     return;
   }
 
-  if($installer->copy($vars['LC_DST']."/phpMyAdmin-5.2.2-all-languages/*", $vars['LC_DST']."/") === false) {
+  if($installer->copy($vars['LC_DST']."/phpMyAdmin-5.2.3-all-languages/*", $vars['LC_DST']."/") === false) {
     return;
   }
 
   //remove the "root"-directory
-  if($installer->remove($vars['LC_DST']."/phpMyAdmin-5.2.2-all-languages") === false) {
+  if($installer->remove($vars['LC_DST']."/phpMyAdmin-5.2.3-all-languages") === false) {
     return;
   }
 
