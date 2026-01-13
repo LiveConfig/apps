@@ -28,13 +28,13 @@ $installer = new Installer();
 
 $LCWAI_APPINFOS = array(
   'name' => "Roundcube",
-  'icon' => "ico-roundcube.png",
+  'icon' => "ico-roundcube.svg",
   'version' => "1.6.12",
   'version_major' => 1,
   'version_minor' => 6,
   'version_patch' => 12,
   'version_extra' => 0,
-  'inst_name' => "wai-roundcube-1.6.12-1.php",
+  'inst_name' => "wai-roundcube-1.6.12-2.php",
   'inst_version' => 3,
   'release_date' => "2025-12-13 00:00:00",
   'rq_mysql_min' => "5.0",

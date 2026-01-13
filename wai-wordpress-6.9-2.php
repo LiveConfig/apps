@@ -26,13 +26,13 @@ $installer = new Installer();
 
 $LCWAI_APPINFOS = array(
   'name' => "WordPress",
-  'icon' => "ico-wordpress.png",
+  'icon' => "ico-wordpress.svg",
   'version' => "6.9",
   'version_major' => 6,
   'version_minor' => 9,
   'version_patch' => 0,
   'version_extra' => 0,
-  'inst_name' => "wai-wordpress-6.9-1.php",
+  'inst_name' => "wai-wordpress-6.9-2.php",
   'inst_version' => 1,
   'release_date' => "2025-12-02 00:00:00",
   'rq_mysql_min' => "8.0",

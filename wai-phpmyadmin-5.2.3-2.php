@@ -29,13 +29,13 @@ $installer = new Installer();
 
 $LCWAI_APPINFOS = array(
   'name' => "phpMyAdmin",
-  'icon' => "ico-phpmyadmin.png",
+  'icon' => "ico-phpmyadmin.svg",
   'version' => "5.2.3",
   'version_major' => 5,
   'version_minor' => 2,
   'version_patch' => 3,
   'version_extra' => 0,
-  'inst_name' => "wai-phpmyadmin-5.2.3-1.php",
+  'inst_name' => "wai-phpmyadmin-5.2.3-2.php",
   'inst_version' => 2,
   'release_date' => "2025-10-08 00:00:00",
   'rq_mysql_min' => "5.5",
