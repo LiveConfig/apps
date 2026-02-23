@@ -7,10 +7,9 @@
  *                                    |___/
  * LiveConfig Web Application Installer (LC WAI)
  * Web-App-Name: Roundcube
- * Web-App-Version: 1.6.12
- * $Id: wai-roundcube-1.6.12-1.php 781 2025-12-18 15:15:30Z kk $
+ * Web-App-Version: 1.6.13
  * @author Christoph Russow, Klaus Keppler
- * @copyright Copyright (c) 2009-2025 LiveConfig GmbH.
+ * @copyright Copyright (c) 2009-2026 LiveConfig GmbH.
  * @version 1.0
  * --------------------------------------------------------------------------
  */
@@ -29,14 +28,14 @@ $installer = new Installer();
 $LCWAI_APPINFOS = array(
   'name' => "Roundcube",
   'icon' => "ico-roundcube.svg",
-  'version' => "1.6.12",
+  'version' => "1.6.13",
   'version_major' => 1,
   'version_minor' => 6,
-  'version_patch' => 12,
+  'version_patch' => 13,
   'version_extra' => 0,
-  'inst_name' => "wai-roundcube-1.6.12-2.php",
+  'inst_name' => "wai-roundcube-1.6.13-1.php",
   'inst_version' => 3,
-  'release_date' => "2025-12-13 00:00:00",
+  'release_date' => "2026-02-08 00:00:00",
   'rq_mysql_min' => "5.0",
   'rq_mysql_max' => null,
   'rq_php_min' => "5.3",
@@ -61,9 +60,9 @@ $LCWAI_APPINFOS = array(
 
 /* Files to download */
 $LCWAI_DOWNLOADS['ALL'] = array( // Downloads for ALL languages
-  'PACKAGE' => array('NAME' => 'roundcubemail-1.6.12-complete.tar.gz',
-                     'SHA1' => '544bc6b91a19bf1cc4a1255c5106a732325e1ce7',
-                     'URL'  => 'https://github.com/roundcube/roundcubemail/releases/download/1.6.12/roundcubemail-1.6.12-complete.tar.gz'),
+  'PACKAGE' => array('NAME' => 'roundcubemail-1.6.13-complete.tar.gz',
+                     'SHA1' => 'a064ce12858ce4db4f69db64504039d40e294bd0',
+                     'URL'  => 'https://github.com/roundcube/roundcubemail/releases/download/1.6.13/roundcubemail-1.6.13-complete.tar.gz'),
 
   'PASSWORD_PLUGIN' => array('NAME' => 'liveconfig.php',
                              'SHA1' => '825f433af92c6b18089f557355145eba3f892b22',
@@ -230,12 +229,12 @@ function wai_install() {
   }
 
   //move files out of "root"-directory
-  if($installer->move($vars['LC_DST']."/roundcubemail-1.6.12/*", $vars['LC_DST']."/") === false) {
+  if($installer->move($vars['LC_DST']."/roundcubemail-1.6.13/*", $vars['LC_DST']."/") === false) {
     return;
   }
 
   //remove the "root"-directory
-  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.12") === false) {
+  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.13") === false) {
     return;
   }
 
@@ -342,12 +341,12 @@ function wai_update() {
     return;
   }
 
-  if($installer->copy($vars['LC_DST']."/roundcubemail-1.6.12/*", $vars['LC_DST']."/") === false) {
+  if($installer->copy($vars['LC_DST']."/roundcubemail-1.6.13/*", $vars['LC_DST']."/") === false) {
     return;
   }
 
   //remove the "root"-directory
-  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.12") === false) {
+  if($installer->remove($vars['LC_DST']."/roundcubemail-1.6.13") === false) {
     return;
   }
 
