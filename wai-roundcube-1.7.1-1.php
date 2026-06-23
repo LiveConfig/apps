@@ -8,7 +8,6 @@
  * LiveConfig Web Application Installer (LC WAI)
  * Web-App-Name: Roundcube
  * Web-App-Version: 1.7.1
- * $Id: wai-roundcube-1.7.1-1.php 789 2026-03-24 10:43:26Z kk $
  * @author Christoph Russow, Klaus Keppler
  * @copyright Copyright (c) 2009-2026 LiveConfig GmbH.
  * @version 1.0
@@ -31,12 +30,12 @@ $LCWAI_APPINFOS = array(
   'icon' => "ico-roundcube.svg",
   'version' => "1.7.1",
   'version_major' => 1,
-  'version_minor' => 6,
-  'version_patch' => 14,
+  'version_minor' => 7,
+  'version_patch' => 1,
   'version_extra' => 0,
   'inst_name' => "wai-roundcube-1.7.1-1.php",
   'inst_version' => 3,
-  'release_date' => "2026-03-18 00:00:00",
+  'release_date' => "2026-05-24 00:00:00",
   'rq_mysql_min' => "5.0",
   'rq_mysql_max' => null,
   'rq_php_min' => "5.3",
