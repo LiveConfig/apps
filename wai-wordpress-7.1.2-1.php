@@ -7,8 +7,8 @@
  *                                    |___/
  * LiveConfig Web Application Installer (LC WAI)
  * Web-App-Name: WordPress
- * Web-App-Version: 6.9.4
- * $Id: wai-wordpress-6.9.4-1.php 788 2026-03-24 10:40:54Z kk $
+ * Web-App-Version: 7.1.2
+ * $Id: wai-wordpress-7.1.2-1.php 795 2026-09-29 08:23:05Z kk $
  * @author Christoph Russow
  * @copyright Copyright (c) 2009-2026 LiveConfig GmbH.
  * @version 1.0
@@ -27,14 +27,14 @@ $installer = new Installer();
 $LCWAI_APPINFOS = array(
   'name' => "WordPress",
   'icon' => "ico-wordpress.svg",
-  'version' => "6.9.4",
-  'version_major' => 6,
-  'version_minor' => 9,
-  'version_patch' => 4,
+  'version' => "7.1",
+  'version_major' => 7,
+  'version_minor' => 1,
+  'version_patch' => 2,
   'version_extra' => 0,
-  'inst_name' => "wai-wordpress-6.9.4-1.php",
+  'inst_name' => "wai-wordpress-7.1.2-1.php",
   'inst_version' => 1,
-  'release_date' => "2026-03-11 00:00:00",
+  'release_date' => "2026-09-22 00:00:00",
   'rq_mysql_min' => "8.0",
   'rq_mysql_max' => null,
   'rq_php_min' => "7.4",
@@ -61,56 +61,56 @@ $LCWAI_APPINFOS = array(
 $LCWAI_DOWNLOADS['ALL'] = array( // Downloads for ALL languages
 );
 $LCWAI_DOWNLOADS['de'] = array( // Downloads for 'de' (german) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4-de_DE.tar.gz',
-                     'SHA1' => '08e96b26e819fd3832b49f88a4ebf6043cdd970f',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4-de_DE.tar.gz',
-                     'SRC'  => 'https://de.wordpress.org/wordpress-6.9.4-de_DE.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-7.1.2-de_DE.tar.gz',
+                     'SHA1' => '35fe7f0d314475d7f62633de96e4672ff5975771',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-7.1.2-de_DE.tar.gz',
+                     'SRC'  => 'https://de.wordpress.org/wordpress-7.1.2-de_DE.tar.gz'),
 );
 $LCWAI_DOWNLOADS['en'] = array( // Downloads for 'en' (english) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4.tar.gz',
-                     'SHA1' => '018542f4c3e15db0d8e38aaf0fcf1b5dc56dbb79',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4.tar.gz',
-                     'SRC'  => 'https://wordpress.org/wordpress-6.9.4.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-7.1.2.tar.gz',
+                     'SHA1' => '761b8101538f0631a0bfc4fba7bc4abeea92f81c',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-7.1.2.tar.gz',
+                     'SRC'  => 'https://wordpress.org/wordpress-7.1.2.tar.gz'),
 );
 $LCWAI_DOWNLOADS['es'] = array( // Downloads for 'es' (spanish) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4-es_ES.tar.gz',
-                     'SHA1' => '9acdd72162e7f0d0c7ca83e6e1904a2980b9fcb4',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4-es_ES.tar.gz',
-                     'SRC'  => 'https://es.wordpress.org/wordpress-6.9.4-es_ES.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-7.1-es_ES.tar.gz',
+                     'SHA1' => '15c06543567a7ad87a30dd8158a99f06157c7626',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-7.1-es_ES.tar.gz',
+                     'SRC'  => 'https://es.wordpress.org/wordpress-7.1-es_ES.tar.gz'),
 );
 $LCWAI_DOWNLOADS['fr'] = array( // Downloads for 'fr' (french) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4-fr_FR.tar.gz',
-                     'SHA1' => 'b4d3b685d25a8f03863e9109b9ec5dd195a021d3',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4-fr_FR.tar.gz',
-                     'SRC'  => 'https://fr.wordpress.org/wordpress-6.9.4-fr_FR.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-7.1.2-fr_FR.tar.gz',
+                     'SHA1' => '65ef65694d7a739cede68777af8f6a3307dce04d',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-7.1.2-fr_FR.tar.gz',
+                     'SRC'  => 'https://fr.wordpress.org/wordpress-7.1.2-fr_FR.tar.gz'),
 );
 $LCWAI_DOWNLOADS['hr'] = array( // Downloads for 'hr' (croatian) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4-hr.tar.gz',
-                     'SHA1' => 'd865251b755bf034ec1f35cf268ee3622162f351',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4-hr.tar.gz',
-                     'SRC'  => 'https://hr.wordpress.org/wordpress-6.9.4-hr.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-7.1-hr.tar.gz',
+                     'SHA1' => 'ee4273615c7240c39dfac96b75ce22d96e397269',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-7.1-hr.tar.gz',
+                     'SRC'  => 'https://hr.wordpress.org/wordpress-7.1-hr.tar.gz'),
 );
 $LCWAI_DOWNLOADS['nl'] = array( // Downloads for 'nl' (dutch) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4-nl_NL.tar.gz',
-                     'SHA1' => 'ecc66d4a1bf68edb03223d481658e8eb319c2e33',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4-nl_NL.tar.gz',
-                     'SRC'  => 'https://nl.wordpress.org/wordpress-6.9.4-nl_NL.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-7.1.2-nl_NL.tar.gz',
+                     'SHA1' => '6f5966a843106a7659a87069ed2afeb6af5fcc70',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-7.1.2-nl_NL.tar.gz',
+                     'SRC'  => 'https://nl.wordpress.org/wordpress-7.1.2-nl_NL.tar.gz'),
 );
 $LCWAI_DOWNLOADS['sr'] = array( // Downloads for 'sr' (serbian) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4-sr_RS.tar.gz',
-                     'SHA1' => '890580557fee8bcfb056d48c35b56d08161477b0',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4-sr_RS.tar.gz',
-                     'SRC'  => 'https://sr.wordpress.org/wordpress-6.9.4-sr_RS.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-6.9.7-sr_RS.tar.gz',
+                     'SHA1' => '1b7190750a07e5b4e456d4479c1d2dc8c5f734f6',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.7-sr_RS.tar.gz',
+                     'SRC'  => 'https://sr.wordpress.org/wordpress-6.9.7-sr_RS.tar.gz'),
 #  'PACKAGE' => array('NAME' => 'wordpress-6.6.1.tar.gz',
 #                     'SHA1' => 'cd5544c85824e3cd8105018c63ccdba31883d881',
 #                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.6.1.tar.gz',
 #                     'SRC'  => 'https://wordpress.org/wordpress-6.6.1.tar.gz'),
 );
 $LCWAI_DOWNLOADS['cz'] = array( // Downloads for 'cz' (czech) language
-  'PACKAGE' => array('NAME' => 'wordpress-6.9.4-cs_CZ.tar.gz',
-                     'SHA1' => '616987e109c4f9148a024da958614b3056e4141a',
-                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-6.9.4-cs_CZ.tar.gz',
-                     'SRC'  => 'https://cs.wordpress.org/wordpress-6.9.4-cs_CZ.tar.gz'),
+  'PACKAGE' => array('NAME' => 'wordpress-7.1.2-cs_CZ.tar.gz',
+                     'SHA1' => 'ca1f659868b7405ac92a9dd27e0ae0a5024f8b2c',
+                     'URL'  => 'http://download.liveconfig.com/cache/wordpress-7.1.2-cs_CZ.tar.gz',
+                     'SRC'  => 'https://cs.wordpress.org/wordpress-7.1.2-cs_CZ.tar.gz'),
 );
 
 /* Variables Liveconfig has to ask the user */
